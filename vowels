@@ -1,1 +1,25 @@
+Print all characters of a string
+
+
+
+	let name = "Vineet";
+for (i=0; i<name.length; i++){
+    console.log(name[i]);
+};
+============================================================
+Print only vowels
+
+
+
+let name = "Vineet";
+let vowels = ["a", "e", "i", "o", "u"];
+for (i=0; i<name.length; i++){
+    for (j=0; j<vowels.length; j++){
+        if (name[i] == vowels[j]){
+            console.log(name[i]);
+        };
+    };  
+};
+
+============================================================
 
