@@ -1,0 +1,22 @@
+Interest
+
+
+
+
+        let a = 10;
+        let b = 5;
+        let c = 10
+        switch(true) {
+          case a < 1000:
+            c = 5
+            break;
+          case a > 1000 && a < 5000:
+            c = 10
+            break;
+          case a > 5000:
+            c = 15
+        }
+        interest = (a * b * c/ 100)
+        console.log(interest)
+        amount = (interest + a)
+        console.log(amount)
