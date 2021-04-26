@@ -20,3 +20,6 @@ Interest
         console.log(interest)
         amount = (interest + a)
         console.log(amount)
+
+
+                ================================================================================
