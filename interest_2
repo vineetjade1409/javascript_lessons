@@ -1,31 +1,36 @@
-CALCULATING INTEREST BY SPLITTING UP THE LOAN AMOUNT
+CALCULATING INTEREST BY SPLITTING UP THE LOAN 
 
 
-let loan = 300000; //document.getElementById('loan').nodeValue;
+let loan = 1000000; //document.getElementById('loan').nodeValue;
 let i1 = 0;
 let i2 = 0;
 let i3 = 0;
 
 //calculate i1    
 if (loan < 100000){
-    i1 = loan * 12/100
+    i1 = loan * 10/100
 }
 else{ 
-    i1 = 100000 * 12/100
+    i1 = 100000 * 10/100
 };
 
 
 //calculate i2
 if (loan > 100000 && loan < 500000 ){
-    i2 = (loan - 100000)* 14/100
+    i2 = (loan - 100000)* 20/100
 }
-else{ 
+else{ if (loan < 100000){
     i2 = 0
+}else{
+    i2 = (loan - 100000)* 20/100
+}
+
+    
 };
 
 //calculate i3    
 if (loan > 500000){
-    i3 = loan * 16/100
+    i3 = (loan * 40/100)
 }
 else{ 
     i3 = 0
