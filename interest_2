@@ -1,0 +1,36 @@
+CALCULATING INTEREST BY SPLITTING UP THE LOAN AMOUNT
+
+
+let loan = 300000; //document.getElementById('loan').nodeValue;
+let i1 = 0;
+let i2 = 0;
+let i3 = 0;
+
+//calculate i1    
+if (loan < 100000){
+    i1 = loan * 12/100
+}
+else{ 
+    i1 = 100000 * 12/100
+};
+
+
+//calculate i2
+if (loan > 100000 && loan < 500000 ){
+    i2 = (loan - 100000)* 14/100
+}
+else{ 
+    i2 = 0
+};
+
+//calculate i3    
+if (loan > 500000){
+    i3 = loan * 16/100
+}
+else{ 
+    i3 = 0
+};
+    let i = i1 + i2 + i3
+    console.log(i)
+let totalamount = loan + i
+console.log(totalamount)
