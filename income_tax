@@ -1,12 +1,9 @@
 CALACULATING THE INCOME TAX OF ANY INDIAN IN JAVASCRIPT
-                                
-                                
-                                
-                                
-                                
-                                
-        var gender = "male"
-        var income = 1000001
+ 
+ 
+ 
+         var gender = "male"
+        var income = 1483648747474
         var tax = 0
         t1 = 0
         t2 = 0
@@ -27,13 +24,13 @@ CALACULATING THE INCOME TAX OF ANY INDIAN IN JAVASCRIPT
         // calculate t2
         switch(true){
             case gender == "male" && income > 150000 && income < 250000:
-            t2 = 10/100 * income
+            t2 = 10/100 * (income - 150000)
             break;
             case  gender == "male" && income < 150000 :
             t2 = 0
             break;
             case  gender == "male" && income > 250000 :
-            t2 = 10/100 * income
+            t2 = 10/100 * (income - 150000)
             break;
             case gender == "female" && income > 150000 && income < 250000:
             t2 = 0
@@ -51,52 +48,51 @@ CALACULATING THE INCOME TAX OF ANY INDIAN IN JAVASCRIPT
         // calculate t3
         switch(true){
             case gender == "male" && income > 250000 && income < 500000:
-            t3 = 20/100 * income
+            t3 = 20/100 * (income - 250000)
             break;
             case  gender == "male" && income < 250000 :
             t3 = 0
             break;
             case  gender == "male" && income > 500000 :
-            t3 = 20/100 * income
+            t3 = 20/100 * (income - 250000 )
             break;
             case gender == "female" && income > 250000 && income < 500000:
-            t3 = 10/100 * income
+            t3 = 10/100 * (income - 250000)
             break;
             case gender == "female" && income < 250000:
             t3 = 0
             case gender == "female" &&  income > 500000:
-            t3 = 10/100 * income
-
+            t3 = 10/100 * (income - 250000)
 
         }
          //calculate t4
          switch(true){
             case gender == "male" && income > 500000 && income < 1000000:
-            t4 = 30/100 * income
+            t4 = 30/100 * (income - 500000)
             break;
             case  gender == "male" && income < 500000 :
             t4 = 0
             break;
             case  gender == "male" && income > 1000000 :
-            t4 = 30/100 * income
+            t4 = 30/100 * (income - 500000)
             break;
             case gender == "female" && income > 500000 && income < 1000000:
-            t4 = 20/100 * income
+            t4 = 20/100 * (income - 500000)
             break;
             case gender == "female" && income < 500000:
             t4 = 0
             case gender == "female" &&  income > 1000000:
-            t4 = 20/100 * income
+            t4 = 20/100 * (income - 500000)
 
 
         }
         // calculate t5
         switch(true){
             case gender == "male" &&  income > 1000000:
-            t5 = 30/100 * income
+            t5 = 30/100 * (income - 1000000)
             break;
             case  gender == "female" && income > 1000000 :
-            t5 = 30/100 * income 
+            t5 = 30/100 * (income - 1000000)
             break;
             case gender == "male" &&  income < 1000000:
             t5 = 0 
@@ -112,3 +108,15 @@ CALACULATING THE INCOME TAX OF ANY INDIAN IN JAVASCRIPT
         tax = t1 + t2 + t3 + t4 + t5
         // print total tax
         console.log (tax)
+                                
+                                
+                                
+                                
+                                
+         
+         
+          
+
+
+
+        
