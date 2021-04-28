@@ -1,114 +1,58 @@
-CALACULATING THE INCOME TAX OF ANY INDIAN IN JAVASCRIPT
+// declaring the variables
+ var gender = "female"
+ var income = 1500000
+ var maxmalet1 = 0
+ var maxmalet2 = 10000
+ var maxmalet3 = 50000
+ var maxmalet4 = 150000
+ var maxfemalet1 = 0
+ var maxfemalet2 = 0
+ var maxfemalet3 = 25000
+ var maxfemalet4 = 100000
+ var t1 = 0
+ var t2 = 0
+ var t3 = 0
+ var t4 = 0
+ var t5 = 0
+ tax = 0
+  // if male
+ if ( income > 1000000 && gender == "male"){
+     tax = maxmalet1 + maxmalet2 + maxmalet3 + maxmalet4 + ((income - 1000000)*30/100)
+ }else{
+    if ( income > 500000 && gender == "male" ){
+        tax = maxmalet1 + maxmalet2 + maxmalet3 + ((income - 500000) * 30/100)
+        
+  }else{
+        if (income > 250000 && gender == "male"){
+            tax = maxmalet1 + maxmalet2 + ((income - 250000) * 20 / 100)
+            
+   }else{
+           if (income > 150000 && gender == "male"){
+               tax = maxmalet1 + ((income - 150000)* 10 / 100)
+           }
+        }
+     }
+ }
+ // if female
  
- 
- 
-         var gender = "male"
-        var income = 1483648747474
-        var tax = 0
-        t1 = 0
-        t2 = 0
-        t3 = 0
-        t4 = 0
-        t5 = 0
-        // calculate t1
-        if (gender == "male" && income < 150000){
-            t1 = 0
-        }else{
-            t1 = 0
-        }
-        if (gender == "female" && income < 150000){
-            t1 = 0
-        }else{
-            t1 = 0
-        }
-        // calculate t2
-        switch(true){
-            case gender == "male" && income > 150000 && income < 250000:
-            t2 = 10/100 * (income - 150000)
-            break;
-            case  gender == "male" && income < 150000 :
-            t2 = 0
-            break;
-            case  gender == "male" && income > 250000 :
-            t2 = 10/100 * (income - 150000)
-            break;
-            case gender == "female" && income > 150000 && income < 250000:
-            t2 = 0
-            break;
-            case gender == "female" && income < 150000:
-            t2 = 0
-            case gender == "female" &&  income > 250000:
-            t2 = 0
-
-
-        }
-
-
-
-        // calculate t3
-        switch(true){
-            case gender == "male" && income > 250000 && income < 500000:
-            t3 = 20/100 * (income - 250000)
-            break;
-            case  gender == "male" && income < 250000 :
-            t3 = 0
-            break;
-            case  gender == "male" && income > 500000 :
-            t3 = 20/100 * (income - 250000 )
-            break;
-            case gender == "female" && income > 250000 && income < 500000:
-            t3 = 10/100 * (income - 250000)
-            break;
-            case gender == "female" && income < 250000:
-            t3 = 0
-            case gender == "female" &&  income > 500000:
-            t3 = 10/100 * (income - 250000)
-
-        }
-         //calculate t4
-         switch(true){
-            case gender == "male" && income > 500000 && income < 1000000:
-            t4 = 30/100 * (income - 500000)
-            break;
-            case  gender == "male" && income < 500000 :
-            t4 = 0
-            break;
-            case  gender == "male" && income > 1000000 :
-            t4 = 30/100 * (income - 500000)
-            break;
-            case gender == "female" && income > 500000 && income < 1000000:
-            t4 = 20/100 * (income - 500000)
-            break;
-            case gender == "female" && income < 500000:
-            t4 = 0
-            case gender == "female" &&  income > 1000000:
-            t4 = 20/100 * (income - 500000)
-
-
-        }
-        // calculate t5
-        switch(true){
-            case gender == "male" &&  income > 1000000:
-            t5 = 30/100 * (income - 1000000)
-            break;
-            case  gender == "female" && income > 1000000 :
-            t5 = 30/100 * (income - 1000000)
-            break;
-            case gender == "male" &&  income < 1000000:
-            t5 = 0 
-            case gender == "female" &&  income < 1000000:
-            t5 = 0
-
-
-
-        }
-
-
-        // calculate total tax
-        tax = t1 + t2 + t3 + t4 + t5
-        // print total tax
-        console.log (tax)
-                                
+ if ( income > 1000000 && gender == "female"){
+     tax = maxfemalet1 + maxfemalet2 + maxfemalet3 + maxfemalet4 + ((income - 1000000)*30/100)
+ }else{
+    if ( income > 500000 && gender == "female" ){
+        tax = maxfemalet1 + maxfemalet2 + maxfemalet3 + ((income - 500000) * 20/100)
+        
+  }else{
+        if (income > 250000 && gender == "female"){
+            tax = maxfemalet1 + maxfemalet2 + ((income - 250000) * 10 / 100)
+            
+    }else{
+           if (income > 150000 && gender == "female"){
+               tax = maxfemalet1 + maxfemalet2
+           }
+       }
+    }
+ }
+console.log(tax)                  
                                 
                                 
                                 
