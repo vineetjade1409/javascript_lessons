@@ -1,0 +1,19 @@
+// variables
+var numbers = [1,5,9,15,5,10,25,30,90,10,5,2,5,4,6,8,9,2];
+var x = 0
+var average = 0
+// validations
+// no validations required
+
+
+//logic      
+for ( i = 0; i < numbers.length; i++){
+    x = x + numbers[i]
+}
+average = x / numbers.length
+for (j = 0 ; j < numbers.length; j++){
+    if (numbers[j] > average){
+      console.log(numbers[j])  
+    }
+}
+
