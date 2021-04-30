@@ -1,19 +1,23 @@
-var listA = [1 , 7 , 6 , 3 , 4, 9, 0 ,2, 5, 8];
-var listB = [1 , 6, 3, 5 , 65 , 97 , 28];
+ //input
+var listA = [1 , 7 , 6 , 3 , 3, 9, 0 ,2, 5, 8];
+var listB = [1 , 6, 3, 5 , 9, 65 , 97 , 28];
 
+//logic
 var uniqueNumbers = [];
-var x = 0;
-var output = [];
 for(i = 0; i < listA.length; i++){
     for(j = 0; j < listB.length; j++){
-       if(listA[i] ==listB[j] ){
-           x =listA[i]
-            listA[i].push(uniqueNumbers)
-       };
-       for(f = 0; f < uniqueNumbers.length;f++){
-            if(x != uniqueNumbers[f])
-            output.push(x)
+       if(listA[i] == listB[j] ){
+           var found = false;
+            for(f = 0; f < uniqueNumbers.length;f++){
+              if(listA[i] == uniqueNumbers[f]){
+                  found = true;
+              };
+            };
+            
+            if(!found){
+                uniqueNumbers.push(listA[i]);
+            }
        };
     };
 };
-console.log(output)
+console.log(uniqueNumbers)
