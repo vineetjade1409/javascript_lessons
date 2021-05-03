@@ -18,3 +18,28 @@ var output = [];
  };
  // output
  console.log (output);
+ =============================================================================
+ // input
+var numbers =  ["vivek", "ignore", "jade", 6 , 5, 4];
+var numbers2 =  ["ignore", "jeevendra", 2 , 8, 9, 7];
+// logic 
+var output = [];
+var skipped = false
+ for(i = 0; i< numbers.length; i++){
+     if (skipped){
+         skipped = false;
+         continue;
+     }
+     output[i] = numbers[i];
+     skipped = true;
+};
+ var skipped2 = false
+ for (j = 1; j< numbers2.length; j++){
+    if (skipped){
+         skipped = false;
+         continue;
+     }
+    output[j] = numbers2[j];
+    skipped = true
+ };
+ =======================================================================================
