@@ -1,0 +1,20 @@
+
+
+       // input
+var numbers =  ["vivek", "ignore", "jade", 6 , 5, 4];
+var numbers2 =  ["ignore", "jeevendra", 2 , 8, 9, 7];
+// logic 
+var output = [];
+ for(i = 0; i< numbers.length; i++){
+     output[i] = numbers[i];
+     i = i + 1;
+     
+ };
+ 
+ for (j = 1; j< numbers2.length; j++){
+    output[j] = numbers2[j];
+    j = j + 1;
+    
+ };
+ // output
+ console.log (output);
