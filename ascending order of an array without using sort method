@@ -1,0 +1,32 @@
+
+
+    
+//declaring the varjables
+var inputarray = [1, 2, 3, 4, 76, 98, 234, 2, 5, 123, 76, 83, 4];
+var outputarray = [];
+
+//validatjons
+
+// logic
+var skip = true
+for (i = 0; i < inputarray.length; i++) {
+    //decide if it is first element
+    if (outputarray.length == 0) {
+        outputarray.push(inputarray[i]);
+    } else {
+        for (j = 0; j < outputarray.length; j++) {
+            if (inputarray[i] < outputarray[j]) {
+                outputarray.splice(j, 0, inputarray[i]);
+                skip = false
+                break;
+            };
+        };
+
+        if (skip) {
+            outputarray.push(inputarray[i])
+        };
+    };
+};
+
+// output
+console.log(outputarray)
