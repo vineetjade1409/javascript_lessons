@@ -1,0 +1,38 @@
+// declaring the variables
+var searchInText = "vineet vivek jade";
+var searchBy = ["v", "i", "v", "e"];
+var k = searchBy.length - 1;
+var flag = 1;
+var l = 0;
+var dontComplete = true
+
+// validations
+if (searchBy.length <= 2) {
+    dontComplete = false;
+};
+//Logic
+var x = 1;
+if (dontComplete) {
+    for (i = searchBy.length - 1; i < searchInText.length; i++) {
+        if (searchInText[i] == searchBy[searchBy.length - 1]) {
+            for (j = 0; j < searchBy.length; j++) {
+                k = k - 1;
+                l = i;
+                l = l - 1;
+                if (searchInText[l] == searchBy[k]) {
+                    flag = flag + 1;
+                    continue;
+                };
+            };
+        };
+        if (flag == searchBy.length) {
+            x = x + 1;
+        };
+        k = searchBy.length - 1;
+    } console.log('the sequence appeared ' + x + ' times!');
+} else {
+    console.log("error , please input more than 2 characters");
+}
+
+
+
