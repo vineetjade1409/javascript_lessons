@@ -1,0 +1,20 @@
+//declaring the variables
+var numbers =  ["vivek", "ignore", "jade", 6 , 5, 4];
+var numbers2 =  ["ignore", "jeevendra", 2 , 8, 9, 7];
+var output = [];
+var array = true;
+var i = 0
+//logic
+for(i = 0; i < numbers2.length; i++){
+    if(array == true){
+       output.push(numbers[i])
+       array = false
+    }else{
+        if(array == false){
+               output.push(numbers2[i])
+               array = true
+        };
+    };
+ };
+ // output
+ console.log(output)
