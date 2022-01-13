@@ -1,0 +1,24 @@
+const doThis = function(n){
+    var array = [7,9,0,-2];
+    var rArray = [];
+    var outputArray = [];
+    var realN = n-1;
+    // reversing the array
+    for(i=0;i<array.length+1;i++){
+        if(i==0){
+            rArray[0] = array[0];
+        }else{
+            rArray.splice(0,0,array[i]);
+        };
+    };
+    rArray.shift()
+    // printing out the final array
+    for(j=0;j<=realN;j++){
+       outputArray.push(rArray[j]);
+    }
+    console.log(outputArray);
+ };
+doThis(2);
+ 
+ im back after a while, aint i?
+ 
