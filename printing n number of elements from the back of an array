@@ -3,6 +3,10 @@ const doThis = function(n){
     var rArray = [];
     var outputArray = [];
     var realN = n-1;
+    if(n > array.length){
+        console.log("please enter a valid number");
+        return;
+    };
     // reversing the array
     for(i=0;i<array.length+1;i++){
         if(i==0){
@@ -20,5 +24,4 @@ const doThis = function(n){
  };
 doThis(2);
  
- im back after a while, aint i?
  
